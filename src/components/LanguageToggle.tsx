@@ -15,10 +15,10 @@ const LanguageToggle = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={toggleLanguage}
-      className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-primary-400 hover:bg-gray-700 transition-colors border border-gray-700"
+      className="bg-gray-800 p-4 rounded-full text-gray-300 hover:text-primary-400 hover:bg-gray-700 transition-colors border border-gray-700 shadow-lg"
       title={language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
     >
-      <Globe size={20} />
+      <Globe size={24} />
     </motion.button>
   );
 };

@@ -124,19 +124,19 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
 
         {/* Scroll indicator - positioned between buttons and section end */}
         <motion.div
-          className="text-center"
+          className="text-center mt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
           <motion.button
             onClick={scrollToAbout}
-            className="text-gray-400 hover:text-primary-400 transition-colors flex flex-col items-center gap-2 mx-auto focus:outline-none"
+            className="text-gray-400 hover:text-primary-400 transition-colors flex flex-col items-center gap-3 mx-auto focus:outline-none px-6 py-4 rounded-lg hover:bg-gray-800/30"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            <span className="text-sm">{t.scrollText}</span>
-            <ChevronDown className="w-6 h-6" />
+            <span className="text-lg lg:text-xl font-medium">{t.scrollText}</span>
+            <ChevronDown className="w-8 h-8 lg:w-10 lg:h-10" />
           </motion.button>
         </motion.div>
       </div>

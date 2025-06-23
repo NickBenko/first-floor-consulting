@@ -29,7 +29,7 @@ function App() {
         </div>
 
         {/* Top controls - only language toggle */}
-        <div className="fixed top-24 right-4 z-30 flex items-center space-x-4">
+        <div className="fixed top-32 right-6 lg:right-8 z-30 flex items-center space-x-4">
           <LanguageToggle />
         </div>
 
