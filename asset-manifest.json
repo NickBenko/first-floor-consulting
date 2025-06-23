@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/first-floor-consulting/static/css/main.f22254a5.css",
-    "main.js": "/first-floor-consulting/static/js/main.a7f740a4.js",
+    "main.css": "/first-floor-consulting/static/css/main.c8995563.css",
+    "main.js": "/first-floor-consulting/static/js/main.2d94a344.js",
     "static/js/488.288cf9f2.chunk.js": "/first-floor-consulting/static/js/488.288cf9f2.chunk.js",
     "service-worker.js": "/first-floor-consulting/service-worker.js",
     "index.html": "/first-floor-consulting/index.html",
-    "main.f22254a5.css.map": "/first-floor-consulting/static/css/main.f22254a5.css.map",
-    "main.a7f740a4.js.map": "/first-floor-consulting/static/js/main.a7f740a4.js.map",
+    "main.c8995563.css.map": "/first-floor-consulting/static/css/main.c8995563.css.map",
+    "main.2d94a344.js.map": "/first-floor-consulting/static/js/main.2d94a344.js.map",
     "488.288cf9f2.chunk.js.map": "/first-floor-consulting/static/js/488.288cf9f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f22254a5.css",
-    "static/js/main.a7f740a4.js"
+    "static/css/main.c8995563.css",
+    "static/js/main.2d94a344.js"
   ]
 }
