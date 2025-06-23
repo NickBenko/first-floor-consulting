@@ -75,9 +75,9 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto flex-1 flex flex-col justify-center">
+      <div className="relative z-10 text-center px-6 sm:px-8 lg:px-12 w-full flex-1 flex flex-col justify-center">
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white mb-6"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -89,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -104,7 +104,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.button
-            className="group bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 hover:bg-primary-700 hover:shadow-xl transition-all duration-300"
+            className="group bg-primary-600 text-white px-10 py-4 rounded-lg text-lg lg:text-xl font-semibold flex items-center gap-2 hover:bg-primary-700 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -113,7 +113,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
           </motion.button>
 
           <motion.button
-            className="group bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 hover:bg-gray-700 hover:text-primary-300 transition-all duration-300 border border-gray-600 hover:border-primary-400"
+            className="group bg-gray-800 text-white px-10 py-4 rounded-lg text-lg lg:text-xl font-semibold flex items-center gap-2 hover:bg-gray-700 hover:text-primary-300 transition-all duration-300 border border-gray-600 hover:border-primary-400"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

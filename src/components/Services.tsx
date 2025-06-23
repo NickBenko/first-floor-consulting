@@ -109,7 +109,7 @@ const Services = () => {
 
   return (
     <section id="services" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,15 +117,15 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             {t.title} <span className="text-primary-400">{t.highlight}</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto">
             {t.subtitle}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {t.services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -134,18 +134,18 @@ const Services = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-primary-500/50 transition-all duration-300 group"
+              className="bg-gray-800/50 p-8 lg:p-10 rounded-xl border border-gray-700 hover:border-primary-500/50 transition-all duration-300 group"
             >
-              <div className="bg-primary-500/20 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-primary-500/30 transition-colors">
-                <service.icon className="w-8 h-8 text-primary-400" />
+              <div className="bg-primary-500/20 rounded-full w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center mb-6 group-hover:bg-primary-500/30 transition-colors">
+                <service.icon className="w-10 h-10 lg:w-12 lg:h-12 text-primary-400" />
               </div>
               
-              <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
-              <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
+              <h3 className="text-xl lg:text-2xl font-bold text-white mb-4">{service.title}</h3>
+              <p className="text-gray-300 mb-6 leading-relaxed text-lg">{service.description}</p>
               
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-400">
+                  <li key={featureIndex} className="flex items-center text-gray-400 text-lg">
                     <div className="w-2 h-2 bg-primary-400 rounded-full mr-3"></div>
                     {feature}
                   </li>
@@ -163,17 +163,17 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-primary-600/20 to-primary-500/20 p-8 rounded-xl border border-primary-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">
+          <div className="bg-gradient-to-r from-primary-600/20 to-primary-500/20 p-8 lg:p-12 rounded-xl border border-primary-500/30">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
               {t.cta.title}
             </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-gray-300 mb-6 max-w-3xl mx-auto text-lg">
               {t.cta.subtitle}
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
+              className="bg-primary-600 text-white px-10 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-lg"
             >
               {t.cta.button}
             </motion.button>

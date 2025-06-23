@@ -49,7 +49,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,10 +57,10 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             {t.title} <span className="text-primary-400">First Floor</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto">
             {t.subtitle}
           </p>
         </motion.div>
@@ -71,7 +71,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-16"
         >
           {t.stats.map((stat, index) => (
             <motion.div
@@ -82,26 +82,26 @@ const About = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="w-8 h-8 text-primary-400" />
+              <div className="bg-gray-800 rounded-full w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center mx-auto mb-4">
+                <stat.icon className="w-10 h-10 lg:w-12 lg:h-12 text-primary-400" />
               </div>
-              <div className="text-3xl font-bold text-white mb-2">{stat.number}</div>
-              <div className="text-gray-400">{stat.label}</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">{stat.number}</div>
+              <div className="text-gray-400 text-lg">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
 
         {/* Mission and Vision */}
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-800/50 p-8 rounded-xl border border-gray-700"
+            className="bg-gray-800/50 p-8 lg:p-12 rounded-xl border border-gray-700"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">{t.mission.title}</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">{t.mission.title}</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               {t.mission.description}
             </p>
           </motion.div>
@@ -111,10 +111,10 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-800/50 p-8 rounded-xl border border-gray-700"
+            className="bg-gray-800/50 p-8 lg:p-12 rounded-xl border border-gray-700"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">{t.vision.title}</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">{t.vision.title}</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               {t.vision.description}
             </p>
           </motion.div>

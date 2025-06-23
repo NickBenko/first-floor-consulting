@@ -56,8 +56,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-black border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="w-full px-6 sm:px-8 lg:px-12 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <motion.div
@@ -66,8 +66,8 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-primary-400 mb-4">First Floor</h3>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <h3 className="text-2xl lg:text-3xl font-bold text-primary-400 mb-4">First Floor</h3>
+              <p className="text-gray-300 mb-6 max-w-lg text-lg">
                 {t.description}
               </p>
               <div className="flex space-x-4">
@@ -106,11 +106,11 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-white mb-4">{t.services}</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">{t.services}</h4>
+            <ul className="space-y-3">
               {t.servicesList.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors text-lg">
                     {service}
                   </a>
                 </li>
@@ -125,18 +125,18 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-white mb-4">{t.contact}</h4>
-            <div className="space-y-3">
-              <div className="flex items-center text-gray-400">
-                <Mail size={16} className="mr-3 text-primary-400" />
+            <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">{t.contact}</h4>
+            <div className="space-y-4">
+              <div className="flex items-center text-gray-400 text-lg">
+                <Mail size={18} className="mr-3 text-primary-400" />
                 <span>{t.email}</span>
               </div>
-              <div className="flex items-center text-gray-400">
-                <Phone size={16} className="mr-3 text-primary-400" />
+              <div className="flex items-center text-gray-400 text-lg">
+                <Phone size={18} className="mr-3 text-primary-400" />
                 <span>{t.phone}</span>
               </div>
-              <div className="flex items-center text-gray-400">
-                <MapPin size={16} className="mr-3 text-primary-400" />
+              <div className="flex items-center text-gray-400 text-lg">
+                <MapPin size={18} className="mr-3 text-primary-400" />
                 <span>{t.address}</span>
               </div>
             </div>
@@ -151,12 +151,12 @@ const Footer = () => {
           viewport={{ once: true }}
           className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-base">
             © {currentYear} First Floor. {t.copyright}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {t.links.map((link, index) => (
-              <a key={index} href="#" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
+              <a key={index} href="#" className="text-gray-400 hover:text-primary-400 text-base transition-colors">
                 {link}
               </a>
             ))}
